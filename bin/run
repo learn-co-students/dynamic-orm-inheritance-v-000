@@ -4,11 +4,12 @@ require_relative "../lib/interactive_record.rb"
 require_relative "../lib/song.rb"
 require_relative "../config/environment.rb"
 
-song = Song.new(name: "Hello", album: "25")
+ong = Song.new(name: "Hello", album: "25")
+song2 = Song.new(name: "Funky Chicken", album: "Barnyard Bash")
 puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
-
+song2.save
 puts Song.find_by_name("Hello")
 
-# DB[:conn].execute("SELECT * FROM songs")
+puts "#{DB[:conn].execute("SELECT * FROM songs")}"
