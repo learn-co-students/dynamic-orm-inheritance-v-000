@@ -8,3 +8,4 @@ class Song < InteractiveRecord
 
 end
 
+#got it
