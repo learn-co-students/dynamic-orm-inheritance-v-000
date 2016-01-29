@@ -57,4 +57,10 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
 
+  def self.create(attributes)
+    new_object = self.new(attributes)
+    new_object.save
+    new_object
+  end
+
 end
