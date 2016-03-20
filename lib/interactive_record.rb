@@ -1,6 +1,7 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
+# great for notes and future code
 class InteractiveRecord
 
   def self.table_name
@@ -25,8 +26,8 @@ class InteractiveRecord
   end
 
   def initialize(options={})
-    options.each do |property, value|
-      self.send("#{property}=", value)
+    options.each do |key, value|
+      self.send("#{key}=", value)
     end
   end
 
