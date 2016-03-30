@@ -11,5 +11,14 @@ sql = <<-SQL
   )
 SQL
 
+sql2 = <<-SQL
+  CREATE TABLE IF NOT EXISTS dogs (
+  id INTEGER PRIMARY KEY, 
+  name TEXT, 
+  breed TEXT
+  )
+SQL
+
 DB[:conn].execute(sql)
+DB[:conn].execute(sql2)
 DB[:conn].results_as_hash = true
