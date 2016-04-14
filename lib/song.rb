@@ -8,3 +8,4 @@ class Song < InteractiveRecord
 
 end
 
+#create attr_accessor with class method, everything else inherited.
