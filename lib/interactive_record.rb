@@ -24,6 +24,9 @@ class InteractiveRecord
     attr_accessor col_name.to_sym
   end
 
+# instances can take in any number of arguments
+# and will initialize with an attr_accessor for that
+# arg
   def initialize(options={})
     options.each do |property, value|
       self.send("#{property}=", value)
