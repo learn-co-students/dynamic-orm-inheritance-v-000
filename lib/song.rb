@@ -1,3 +1,4 @@
+require 'pry'
 require_relative "./interactive_record.rb"
 
 class Song < InteractiveRecord
