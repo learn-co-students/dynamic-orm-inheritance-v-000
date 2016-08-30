@@ -6,4 +6,10 @@ class Song < InteractiveRecord
     attr_accessor col_name.to_sym
   end
 
+  def save
+    song = Song.new
+    song.save
+    song
+  end
+
 end
