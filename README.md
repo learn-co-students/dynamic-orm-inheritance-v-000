@@ -53,3 +53,5 @@ song album: 25
 As we begin to build complex web applications using Sinatra and Rails, this pattern of inheritance will become familiar. In fact, we'll use an ORM tool called Active Record that handles *all* of the ORM interactions for us, and we'll simply inherit our Ruby classes from Active Record's classes.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/dynamic-orm-inheritance'>Dynamic ORMs with Inheritance</a> on Learn.co and start learning to code for free.</p>
+
+#no changes
