@@ -54,3 +54,5 @@ class InteractiveRecord
   end
 
 end
+
+# Change to code so I can submit pull request.
