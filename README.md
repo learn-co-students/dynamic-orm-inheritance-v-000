@@ -4,7 +4,7 @@
 
 1. Explain why it is useful to have a ORM class from which other classes in your program can inherit
 2. Describe the code that is used to construct such a class
-
+cc
 ## Why Inheritance?
 
 The great thing about a Dynamic ORM is that it provides us with a way to write an ORM that is almost entirely abstract. In other words, the methods we write that allow a given Ruby class and instances to communicate with a database are *not specific to any one class*.
