@@ -20,7 +20,7 @@ You'll see that the `InteractiveRecord` class contains almost all of the code re
 These are methods that can be used by *any Ruby class or instance*, as long as we make them available to that class or instance.
 
 ## The Child Class
-
+ 
 Go ahead and open up `lib/song.rb`. Notice that the `Song` class *inherits* from `InteractiveRecord`. This means that *all* of the methods defined in `InteractiveRecord` are available to `Song`.
 
 The only code the `Song` class needs to contain is the code to create the `attr_accessor`s specific to itself. But even that code uses a method, `#column_names`, inherited from the super class.
