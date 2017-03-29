@@ -1,4 +1,5 @@
 require 'sqlite3'
+require 'pry'
 
 require_relative "../lib/interactive_record.rb"
 require_relative "../lib/song.rb"
