@@ -1,3 +1,5 @@
+#!/usr/bin/ruby 
+
 require 'sqlite3'
 
 require_relative "../lib/interactive_record.rb"
