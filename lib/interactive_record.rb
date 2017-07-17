@@ -1,6 +1,8 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
-
+#InteractiveRecord is a SuperClass
+#In the class InteractiveRecord are methods that can be used by any Ruby class or instance,
+# as long as we make them available to that class or instance.
 class InteractiveRecord
 
   def self.table_name
