@@ -1,6 +1,8 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
+#this is the Super Class
+#the child class is the song.rb which inherits from this class
 class InteractiveRecord
 
   def self.table_name
