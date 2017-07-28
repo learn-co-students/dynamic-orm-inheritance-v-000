@@ -10,5 +10,5 @@ puts "song album: " + song.album
 song.save
 
 puts Song.find_by_name("Hello")
-
+# puts gets rid of the outer array, prints the hash only
 # DB[:conn].execute("SELECT * FROM songs")
