@@ -6,4 +6,6 @@ class Song < InteractiveRecord
     attr_accessor col_name.to_sym
   end
 
+  # This is interesting, very difficult stuff. Wish I was in class!
+
 end
