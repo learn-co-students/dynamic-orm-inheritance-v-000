@@ -1,14 +1,20 @@
 require 'sqlite3'
 
 require_relative "../lib/interactive_record.rb"
-require_relative "../lib/song.rb"
+require_relative "../lib/group.rb"
 require_relative "../config/environment.rb"
 
-song = Song.new(name: "Hello", album: "25")
-puts "song name: " + song.name
-puts "song album: " + song.album
-song.save
+group = Group.new(name: "Starbucks", subs: "5,6,8")
+puts "Group name: " + group.name
+puts "Sub groups: " + group.subs
+group.save
 
-puts Song.find_by_name("Hello")
+group = Group.new(name: "Cayenne Restuarant", subs: "15,16,17")
+puts "Group name: " + group.name
+puts "Subgroups: " + group.subs
+group.save
 
-# DB[:conn].execute("SELECT * FROM songs")
+puts Group.find_by_name("Starbucks")
+puts Group.find_by_name("Cayenne Restaurant")
+
+# DB[:conn].execute("SELECT * FROM groups")
