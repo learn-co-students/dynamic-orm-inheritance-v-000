@@ -7,3 +7,5 @@ class Song < InteractiveRecord
   end
 
 end
+
+#Song class inherits from InteractiveRecord. This means that all of the methods defined in InteractiveRecord are available to Song.
