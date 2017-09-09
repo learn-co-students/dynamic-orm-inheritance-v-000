@@ -1,5 +1,8 @@
 require 'sqlite3'
-
+gem 'sqlite3'
+gem 'pry'
+gem 'rake'
+gem 'require_all'
 
 DB = {:conn => SQLite3::Database.new("db/songs.db")}
 DB[:conn].execute("DROP TABLE IF EXISTS songs")
