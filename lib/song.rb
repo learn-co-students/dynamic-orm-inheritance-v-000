@@ -1,5 +1,7 @@
 require_relative "./interactive_record.rb"
 
+# Song inherits from InteractiveRecord
+
 class Song < InteractiveRecord
 
   self.column_names.each do |col_name|
