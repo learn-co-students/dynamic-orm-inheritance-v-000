@@ -9,6 +9,19 @@ puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
 
-puts Song.find_by_name("Hello")
+another_song = Song.new(name: "Little Lion Man", album: "Sigh No More")
+another_song.save
 
-# DB[:conn].execute("SELECT * FROM songs")
+puts Song.find_by_name("Hello")
+puts Song.find_by_name("Little Lion Man")
+
+list = DB[:conn].execute("SELECT * FROM songs")
+
+list.each do |song|
+  song.each do |property, value|
+    if Song.column_names.include?(property)
+      puts "#{property}: #{value}"
+    end
+  end
+  puts "---------------------"
+end
