@@ -49,6 +49,7 @@ class InteractiveRecord
   end
 
   def self.find_by_name(name)
+      #TN: REM -- BELOW IS INCORRECT -- AVOID STRING INTERPOLATION WITH SQL STATEMENTS!
     sql = "SELECT * FROM #{self.table_name} WHERE name = '#{name}'"
     DB[:conn].execute(sql)
   end
