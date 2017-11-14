@@ -20,7 +20,7 @@ class InteractiveRecord #this class does the heavy lifting (Super Class)
     column_names.compact
   end
 
-  def initialize(options={}) 
+  def initialize(options={})
     options.each do |property, value|
       self.send("#{property}=", value)
     end
@@ -32,7 +32,7 @@ class InteractiveRecord #this class does the heavy lifting (Super Class)
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM #{table_name_for_insert}")[0][0]
   end
 
-  def table_name_for_insert 
+  def table_name_for_insert
     self.class.table_name #using a class method inside an instance method
   end
 
