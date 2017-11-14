@@ -1,13 +1,13 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
-class InteractiveRecord
+class InteractiveRecord #this class does the heavy lifting (Super Class)
 
-  def self.table_name
+  def self.table_name #table named after class with correct formatting
     self.to_s.downcase.pluralize
   end
 
-  def self.column_names
+  def self.column_names #derive column names from hash
     DB[:conn].results_as_hash = true
 
     sql = "pragma table_info('#{table_name}')"
@@ -20,7 +20,7 @@ class InteractiveRecord
     column_names.compact
   end
 
-  def initialize(options={})
+  def initialize(options={}) 
     options.each do |property, value|
       self.send("#{property}=", value)
     end
@@ -32,8 +32,8 @@ class InteractiveRecord
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM #{table_name_for_insert}")[0][0]
   end
 
-  def table_name_for_insert
-    self.class.table_name
+  def table_name_for_insert 
+    self.class.table_name #using a class method inside an instance method
   end
 
   def values_for_insert
