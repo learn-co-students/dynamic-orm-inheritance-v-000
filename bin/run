@@ -11,4 +11,11 @@ song.save
 
 puts Song.find_by_name("Hello")
 
+song2 = Song.new(name: "Work", album: "Rupaul")
+puts "song2 name: " + song2.name
+puts "song2 album: " + song2.album
+song2.save
+
+puts Song.find_by_name("Work")
+
 # DB[:conn].execute("SELECT * FROM songs")
