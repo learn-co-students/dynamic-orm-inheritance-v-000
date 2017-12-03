@@ -7,3 +7,4 @@ class Song < InteractiveRecord
   end
 
 end
+#read the lesson...want to get on with active record already
