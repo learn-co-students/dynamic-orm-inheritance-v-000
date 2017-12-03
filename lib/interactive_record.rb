@@ -1,3 +1,5 @@
+#I read this and maybe understood it too :) 
+
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
