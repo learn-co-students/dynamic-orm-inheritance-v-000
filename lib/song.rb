@@ -7,3 +7,5 @@ class Song < InteractiveRecord
   end
 
 end
+
+#read and understood! KT
