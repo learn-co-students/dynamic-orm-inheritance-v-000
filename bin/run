@@ -4,6 +4,8 @@ require_relative "../lib/interactive_record.rb"
 require_relative "../lib/song.rb"
 require_relative "../config/environment.rb"
 
+
+other_song = Song.new(name: "song", album: "Album")
 song = Song.new(name: "Hello", album: "25")
 puts "song name: " + song.name
 puts "song album: " + song.album
