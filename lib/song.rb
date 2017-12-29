@@ -7,3 +7,5 @@ class Song < InteractiveRecord
   end
 
 end
+
+#I love inheritance and these dynamic ORMs
