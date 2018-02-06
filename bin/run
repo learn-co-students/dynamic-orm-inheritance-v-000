@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'sqlite3'
 
 require_relative "../lib/interactive_record.rb"
@@ -10,5 +11,11 @@ puts "song album: " + song.album
 song.save
 
 puts Song.find_by_name("Hello")
+
+song2 = Song.new(name: "Ancient Souls", album: "SuperVision")
+puts "song name: " + song2.name
+puts "song album: " + song2.album
+song2.save
+puts Song.find_by_name("Ancient Souls")
 
 # DB[:conn].execute("SELECT * FROM songs")
