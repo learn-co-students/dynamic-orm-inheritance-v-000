@@ -1,3 +1,4 @@
+read
 # Dynamic ORM with Inheritance
 
 ## Objectives
