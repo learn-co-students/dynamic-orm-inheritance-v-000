@@ -1,6 +1,6 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
-
+# trying to get submit to work....
 class InteractiveRecord
 
   def self.table_name
