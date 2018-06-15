@@ -7,3 +7,5 @@ class Song < InteractiveRecord
   end
 
 end
+
+# a change so I can submit lesson
