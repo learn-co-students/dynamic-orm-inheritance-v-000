@@ -17,7 +17,6 @@ In this repo, in the `lib` directory, you'll see the `interactive_record.rb` fil
 
 You'll see that the `InteractiveRecord` class contains almost all of the code responsible for communicating between our Ruby program and our database. All of the methods defined there are abstract––they do not reference explicit class or attribute names nor do they reference explicit table or column names.
 
-These are methods that can be used by *any Ruby class or instance*, as long as we make them available to that class or instance.
 
 ## The Child Class
 
