@@ -7,3 +7,5 @@ class Song < InteractiveRecord
   end
 
 end
+
+#Inherits from InteractiveRecord Class
