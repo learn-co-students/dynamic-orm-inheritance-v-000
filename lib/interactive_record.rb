@@ -53,4 +53,5 @@ def self.find_by_name(name)
   DB[:conn].execute(sql, name)
 end
 
+
 end
