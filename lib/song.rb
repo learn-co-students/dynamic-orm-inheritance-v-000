@@ -6,4 +6,6 @@ class Song < InteractiveRecord
     attr_accessor col_name.to_sym
   end
 
+  #ony added the code that sets the attr_accessor for the individual class.
+
 end
