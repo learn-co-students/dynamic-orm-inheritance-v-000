@@ -1,8 +1,8 @@
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
-class InteractiveRecord
-
+class InteractiveRecord #should contain almost all of the code responsible for communicating between our Ruby program and our DB
+#All of the methods defined are abstract -- they don not reference explicit class or attribute names nor do they reference explicit table or column names.
   def self.table_name
     self.to_s.downcase.pluralize
   end
