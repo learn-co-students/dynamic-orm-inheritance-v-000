@@ -7,3 +7,10 @@ class Song < InteractiveRecord
   end
 
 end
+
+song = Song.new(name: "Hello", album: "25")
+puts "song name: " + song.name
+puts "song album: " + song.album
+song.save
+ 
+puts Song.find_by_name("Hello")
